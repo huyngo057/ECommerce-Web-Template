@@ -1,0 +1,256 @@
+h1 {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 2em;
+  color: #fff;
+  transform: skewY(-5deg);
+  position: relative;
+  margin-bottom: 60px;
+}
+
+h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: linear-gradient(#88e167, #00e3ae);
+  height: 60%;
+  width: 58%;
+  left: 50%;
+  top: 90%;
+  z-index: -1;
+  transform: skewY(370deg) translate(-50%, -50%);
+}
+
+
+/* Items */
+
+
+.item {
+  display: block;
+  transform: none;
+  width: 320px;
+  box-shadow: 0 0.5em 1em 0.5em rgba(0, 0, 0, 0.2); 
+}
+
+.item-icon {
+  padding: auto 0;
+  font-size: 2.5em;
+  text-align: center;
+  
+}
+.item-price {
+ 
+  padding: 0.5em 0.5em;
+}
+.icon-side {
+  letter-spacing: -15px;
+}
+
+br{
+  display: none;
+}
+
+.item-name {
+  background: linear-gradient(#88e167, #00e3ae);
+  /* padding: 1em 1.3em 1em 1em; */
+  font-size: 1.5em;
+  text-align: center;
+  /* border-left: 0.1px white solid;
+  border-right: 0.1px white solid; */
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.item-name p {
+  transform: none;
+}
+
+.item-organic {
+  padding: 0.5em 0.5em;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 1px lightgray;
+}
+
+.item-organic p {
+  transform: none;
+  background: linear-gradient(#88e167, #00e3ae);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.item-detail {
+  padding: 0.5em 0.5em;
+  font-size: 1em;
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 1px lightgray;
+}
+
+.item:last-child .item-detail {
+  padding-left: 0;
+}
+
+
+.item-detail p {
+  transform: none;
+}
+
+.item-price p {
+  transform: none;
+}
+
+
+
+
+.item-link a {
+  transform: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+.item-link span {
+  transform: none;
+  padding-left: 0.5em;
+}
+
+.item:last-child {
+  margin-left: auto;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+
+/* Detail */
+.product-name {
+  display: block;
+  background: linear-gradient(#88e167, #00e3ae);
+  text-transform: uppercase;
+  color: #fff;
+  height: 2em;
+  padding-top: 0.2em;
+  font-size: 1em;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+
+ .logo  {
+  display: block;
+  padding: 2em 0;
+  font-weight: 700;
+  font-size: 0.8em;
+  width: 100%;
+} 
+.logo p{
+  margin-bottom: 1em;
+}
+
+
+.logo p:nth-child(3) {
+  margin-left: 0;
+}
+.logo p:nth-child(4) {
+  margin-left: 0;
+}
+
+.cart:link,
+.cart:visited {
+  display: block;
+  background: #00e3ae;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 1em 0 1em 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: none;
+  /* transition: all ease-in-out; */
+  transition: 0.5s;
+}
+
+.cart span {
+  transform: none;
+}
+.cart span:first-child{
+  display: none;
+}
+.cart:hover {
+  transform: scale(1.1);
+  background: #e3c710;
+}
+
+.information {
+  padding: 2em 1em;
+  font-weight: 700;
+  font-size: 0.8em;
+}
+
+/* back link */
+.back-link:link,
+.back-link:visited {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1.2em;
+  left: 1em;
+  font-size: 0.5em;
+  padding: 2em 1em;
+  background: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index: 2;
+  box-shadow: 0 1em 2.5em rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  transition: 0.5s;
+  font-weight: 700;
+}
+
+.back-link:hover {
+  background-color: #88e167;
+}
+.back-link:active {
+  color: black;
+}
+
+.back-link span {
+  font-size: 1em;
+  margin-right: 0.5em;
+  margin-bottom: 0.4em;
+}
+
+/* Organic tag */
+.organic {
+  align-items: center;
+  position: absolute;
+  top: -2em;
+  color: #fff;
+  right: -2em;
+  padding: 2em 1em;
+  background: linear-gradient(#88e167, #00e3ae);
+  z-index: 2;
+  box-shadow: 0.5em 1em 2.5em rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  transition: 0.5s;
+  align-items: center;
+  justify-content: center;
+}
+.organic h4 {
+  transform: none;
+  font-weight: 900;
+  font-size: 0.5em;
+  text-transform: uppercase;
+}
+
